@@ -1,0 +1,14 @@
+zstyle :omz:plugins:ssh-agent identities <keys> # e.g something.pem
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/user/.oh-my-zsh" # Change user to your username
+
+POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history command_execution_time virtualenv aws)
+ZSH_THEME="powerlevel9k/powerlevel9k
+
+plugins=(git virtualenv virtualenvwrapper git aws colorize cp pyenv ssh-agent osx pylint)
+
+source $ZSH/oh-my-zsh.sh
+
